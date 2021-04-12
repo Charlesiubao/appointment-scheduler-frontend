@@ -97,32 +97,7 @@ const logout = () => {
 }
 
 
-resultsId = null
-const showResults = (data) => {
-    resultsId = data.id
-    let searchResults = document.querySelector('.searchResults')
-    searchResults.classList.remove('hidden')
 
-
-    let resultsLocation = document.querySelector('.resultsLocation')
-    resultsLocation.innerText = data.name
-
-    let resultsWeather = document.querySelector('.resultsWeather')
-    resultsWeather.innerText = data.weather[0].main
-    let resultsWeather2 = document.querySelector('.resultsWeather2')
-    resultsWeather2.innerText = data.weather[0].description
-
-    let resultsFeelsLike = document.querySelector('.resultsFeelsLike')
-    resultsFeelsLike.innerText = `Feels like: ${data.main.feels_like}`
-    let resultsHumidity = document.querySelector('.resultsHumidity')
-    resultsHumidity.innerText = `Humidity: ${data.main.humidity}`
-    let resultsMax = document.querySelector('.resultsMax')
-    resultsMax.innerText = `Max: ${data.main.temp_max}`
-
-    let resultsMin = document.querySelector('.resultsMin')
-    resultsMin.innerText = `Min: ${data.main.temp_min}`
-
-}
 
 const authCheck = () => {
     const patientId = localStorage.getItem('patientId')

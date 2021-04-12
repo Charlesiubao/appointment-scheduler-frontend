@@ -1,0 +1,205 @@
+body {
+  background: #76a9ea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif;
+  align-items: center;
+}
+
+.credentials {
+  background: rgb(230, 230, 230);
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  max-width: 1000px;
+  min-width: 800px;
+}
+
+.text {
+  margin: auto;
+}
+
+.face {
+  margin-left: 10px;
+  /* margin: 10px; */
+  height: 300px;
+  width: 240px;
+  border-radius: 10px;
+}
+
+.linkedin,
+.twitter,
+.instagram {
+  padding: 5px;
+  width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+ul li {
+  list-style: none;
+}
+h1 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.allContent {
+  max-width: 1000px;
+  min-width: 800px;
+}
+.signUpScreen,
+.loginScreen {
+  background-color: rgb(230, 230, 230);
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  max-width: 1000px;
+  min-width: 800px;
+}
+
+.signup-form,
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.signup-form * {
+  margin: 5px 0;
+  border: none;
+}
+.login-form * {
+  margin: 5px 0;
+  border: none;
+}
+input {
+  font-size: 1.5rem;
+}
+input[type="submit"] {
+  font-size: 1.2rem;
+  border: 1px solid grey;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  background-color: rgb(69, 163, 226);
+  color: white;
+}
+input[type="submit"]:hover {
+  color: rgb(69, 163, 226);
+  background-color: white;
+}
+.signUpButton,
+.loginButton {
+  width: 400px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin: 10px 0;
+  padding: 10px 0;
+  background-color: rgb(69, 163, 226);
+  color: white;
+}
+.loginButton:hover {
+  color: rgb(69, 163, 226);
+  background-color: white;
+}
+.signUpButton:hover {
+  color: rgb(69, 163, 226);
+  background-color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  padding: 0 20px;
+}
+.dashboard {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  max-width: 1000px;
+  min-width: 800px;
+  margin-top: 5%;
+}
+.signOutButton {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: rgb(69, 163, 226);
+}
+
+SEARCH SECTION .weather-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+#weather-search {
+  width: 100%;
+  margin: 0 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+.searchResults {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.resultsInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.resultsLocation {
+  font-size: 3rem;
+  margin: 0;
+}
+.closeSearch,
+.saveSearch {
+  font-size: 1.2rem;
+  width: 200px;
+  cursor: pointer;
+  background-color: rgb(69, 163, 226);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0;
+  outline: none;
+}
+.closeSearch {
+  background-color: rgb(159, 55, 53);
+}
+.closeSearch:hover {
+  background-color: rgb(108, 2, 0);
+}
+.saveSearch:hover {
+  background-color: rgb(129, 176, 208);
+  outline: none;
+}
+.searchOptions {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hidden {
+  display: none;
+}

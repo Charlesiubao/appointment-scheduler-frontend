@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div>
+			<div class="credentials">
+				<img class="face" src="assets/DrNagallo.jpg" />
+				<div class="text">
+					<h1>Dr. Krisel Nagallo-Reyes, MD, NMD</h1>
+					<h4>Integrative Medicine and Naturopathic Medicine</h4>
+					<br>13838 S 46th Pl</br> Suite 210
+					<br/> Phoenix, AZ 85044
+				</p>
+				<h5>(602)-432-2900</h5>
+				<a href="https://www.linkedin.com/in/knagallo/">
+					<img class="linkedin" src="assets/linkedin.png">
+					</a>
+					<a href="https://twitter.com/drkrisel">
+						<img class="twitter" src="assets/twitter.png">
+						</a>
+						<a href="https://www.instagram.com/drkrisel/">
+							<img class="instagram" src="assets/instagram.png">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="allContent">
+					<div class="signUpScreen hidden">
+						<h1>Sign Up</h1>
+						<form class="signup-form">
+							<label for="signup-name">Name</label>
+							<input type="text" id="signup-name" />
+							<label for="signup-email">Email</label>
+							<input type="text" id="signup-email" />
+							<label for="signup-password">Password</label>
+							<input type="password" id="signup-password" />
+							<input type="submit" value="Sign Up!" />
+						</form>
+						<button class="loginButton">Login</button>
+					</div>
+					<div class="loginScreen hidden">
+						<h1>Login</h1>
+						<form class="login-form">
+							<label for="login-email">Email</label>
+							<input type="text" id="login-email" />
+							<label for="login-password">Password</label>
+							<input type="password" id="login-password" />
+							<input type="submit" value="Log In!" />
+						</form>
+						<button class="signUpButton">SignUp</button>
+					</div>
+					<div class="dashboard hidden">
+						<div class="nav">
+							<h1 class="patientName">Hello Patient</h1>
+							<script id="setmore_script" type="text/javascript" src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js"></script>
+							<a id="Setmore_button_iframe" style="float:none" href="https://my.setmore.com/bookingpage/2c19f131-af4c-410c-bf85-18d606afdff4">
+								<img border="none" src="https://storage.googleapis.com/setmore-assets/2.0/Images/Integration/book-now-blue.svg" alt="Book an appointment with Sustained Integrative Health using Setmore" />
+							</a>
+							<ul>
+								<li class="signOutButton">Sign Out</li>
+							</ul>
+						</div>
+						<div class="searchContainer">
+							<form class="weather-form">
+								
+							</form>
+							</div>
+						</div>
+						<div class="locationsContainer"></div>
+					</div>
+				</div>
+				<script
+      async
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js "
+    ></script>
+				<script async defer src="./main.js"></script>
+			</body>
+		</html>

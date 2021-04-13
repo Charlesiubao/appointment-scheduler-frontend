@@ -52,10 +52,10 @@ signUpForm.addEventListener('submit', async (e) => {
         const patientName = response.data.patient.name
         localStorage.setItem('patientId', patientId) 
         localStorage.setItem('patientName', patientName) 
-        switchToLogin()
     } catch (error) {
         console.log(error)
     }
+    switchToLogin()
 })
 
 const loginForm = document.querySelector('.login-form')
@@ -96,6 +96,17 @@ const logout = () => {
     authCheck()
 }
 
+// const deletePatient = document.querySelector('.deleteButton')
+// deletePatient.addEventListener('click', async (e) => {
+//   e.
+// })
+
+
+
+//   let patientId = localStorage.getItem('patientId')
+//   let res = await axios.delete(`http://localhost:3001/patient/${patientId}`)
+//   console.log(res)
+// }
 
 
 

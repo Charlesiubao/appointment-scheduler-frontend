@@ -1,5 +1,10 @@
 body {
-  background: #76a9ea;
+  background-image: linear-gradient(
+    to right,
+    #ed1b24,
+    #cccccc,
+    /* #385399, */ #23408e
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +13,7 @@ body {
 }
 
 .credentials {
-  background: rgb(230, 230, 230);
+  background: #f8f8f8;
   padding: 40px;
   border-radius: 10px;
   display: flex;
@@ -57,7 +62,7 @@ p {
 }
 .signUpScreen,
 .loginScreen {
-  background-color: rgb(230, 230, 230);
+  background-color: #f8f8f8;
   padding: 40px;
   border-radius: 10px;
   display: flex;
@@ -92,12 +97,12 @@ input[type="submit"] {
   cursor: pointer;
   border: none;
   padding: 10px;
-  background-color: rgb(69, 163, 226);
+  background-color: #23408e;
   color: white;
 }
 input[type="submit"]:hover {
-  color: rgb(69, 163, 226);
-  background-color: white;
+  color: white;
+  background-color: #ed1b24;
 }
 .signUpButton,
 .loginButton {
@@ -108,16 +113,16 @@ input[type="submit"]:hover {
   border: none;
   margin: 10px 0;
   padding: 10px 0;
-  background-color: rgb(69, 163, 226);
+  background-color: #23408e;
   color: white;
 }
 .loginButton:hover {
-  color: rgb(69, 163, 226);
-  background-color: white;
+  color: white;
+  background-color: #ed1b24;
 }
 .signUpButton:hover {
-  color: rgb(69, 163, 226);
-  background-color: white;
+  color: white;
+  background-color: #ed1b24;
 }
 
 .nav {
@@ -129,75 +134,17 @@ input[type="submit"]:hover {
 }
 .dashboard {
   padding: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #f8f8f8;
   border-radius: 10px;
   max-width: 1000px;
   min-width: 800px;
   margin-top: 5%;
 }
-.signOutButton {
+.signOutButton,
+.deleteButton {
   cursor: pointer;
   font-size: 1.5rem;
-  color: rgb(69, 163, 226);
-}
-
-SEARCH SECTION .weather-form {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin: 20px 0;
-}
-#weather-search {
-  width: 100%;
-  margin: 0 20px;
-  padding: 5px;
-  border-radius: 5px;
-  border: none;
-}
-input:focus {
-  outline: none;
-}
-.searchResults {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid grey;
-  border-radius: 10px;
-  padding: 20px 40px;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-.resultsInfo {
-  display: flex;
-  justify-content: space-between;
-}
-.resultsLocation {
-  font-size: 3rem;
-  margin: 0;
-}
-.closeSearch,
-.saveSearch {
-  font-size: 1.2rem;
-  width: 200px;
-  cursor: pointer;
-  background-color: rgb(69, 163, 226);
-  color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 0;
-  outline: none;
-}
-.closeSearch {
-  background-color: rgb(159, 55, 53);
-}
-.closeSearch:hover {
-  background-color: rgb(108, 2, 0);
-}
-.saveSearch:hover {
-  background-color: rgb(129, 176, 208);
-  outline: none;
-}
-.searchOptions {
-  display: flex;
-  justify-content: space-evenly;
+  color: #23408e;
 }
 
 .hidden {

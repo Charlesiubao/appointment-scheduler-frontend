@@ -96,20 +96,6 @@ const logout = () => {
     authCheck()
 }
 
-// const deletePatient = document.querySelector('.deleteButton')
-// deletePatient.addEventListener('click', async (e) => {
-//   e.
-// })
-
-
-
-//   let patientId = localStorage.getItem('patientId')
-//   let res = await axios.delete(`http://localhost:3001/patient/${patientId}`)
-//   console.log(res)
-// }
-
-
-
 const authCheck = () => {
     const patientId = localStorage.getItem('patientId')
     if (patientId) {
